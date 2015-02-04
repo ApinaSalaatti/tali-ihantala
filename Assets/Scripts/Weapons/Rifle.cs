@@ -40,7 +40,11 @@ public class Rifle : Weapon {
 	{
 		StartCoroutine(MuzzleFlash());
 		GameObject b = (GameObject)Instantiate(bulletPrefab, transform.position + transform.forward, Quaternion.identity);
-		b.rigidbody.AddForce(transform.forward * shootForce, ForceMode.Impulse);
+		Vector3 shootDir = Vector3.forward;
+		// Add some inaccuracy 'cause it looks cool!
+		shootDir.x += Random.Range(-0.07f, 0.07f);
+		shootDir = transform.TransformDirection(shootDir.normalized);
+		b.rigidbody.AddForce(shootDir * shootForce, ForceMode.Impulse);
 	}
 
 	private IEnumerator MuzzleFlash() {

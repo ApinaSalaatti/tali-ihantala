@@ -14,10 +14,7 @@ public class DestroyableObject : MonoBehaviour {
 		
 	}
 	
-	void TakeDamage(float damage) {
-		health -= damage;
-		if(health <= 0f) {
-			Destroy(gameObject);
-		}
+	void OnDeath() {
+		Destroy(gameObject);
 	}
 }

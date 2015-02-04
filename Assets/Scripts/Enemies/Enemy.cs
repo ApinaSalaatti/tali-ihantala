@@ -1,14 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class EnemyHealth : MonoBehaviour {
-	public float maxHealth = 10;
-
-	private float health;
+public class Enemy : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		health = maxHealth;
 		renderer.material.color = Color.green;
 	}
 	
@@ -17,16 +13,16 @@ public class EnemyHealth : MonoBehaviour {
 	
 	}
 
-	void TakeDamage(float damage) {
-		health -= damage;
+	void OnDamage(float damage) {
+		Health h = GetComponent<Health>();
 
-		float healthPrcnt = health / maxHealth;
+		float healthPrcnt = h.CurrentHealth / h.maxHealth;
 
 		Color col = new Color(1f-healthPrcnt, healthPrcnt, 0.1f);
 		renderer.material.color = col;
+	}
 
-		if(health <= 0f) {
-			Destroy(gameObject);
-		}
+	void OnDeath() {
+		Destroy(gameObject);
 	}
 }

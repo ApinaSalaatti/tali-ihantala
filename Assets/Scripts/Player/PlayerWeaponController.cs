@@ -9,9 +9,14 @@ public class PlayerWeaponController : MonoBehaviour {
 	public Weapon rifle;
 	public Weapon grenade;
 
-	public Text weaponText;
+	//public Text weaponText;
 
 	private Weapon currentWeapon;
+	public Weapon CurrentWeapon {
+		get {
+			return currentWeapon;
+		}
+	}
 
 	// Use this for initialization
 	void Start () {
@@ -21,16 +26,17 @@ public class PlayerWeaponController : MonoBehaviour {
 	private void ChangeWeapon(Weapon newWeapon) {
 		currentWeapon.TriggerReleased();
 		currentWeapon = newWeapon;
-		weaponText.text = currentWeapon.gameObject.name;
+		//weaponText.text = currentWeapon.gameObject.name;
+	}
+	private void ToggleWeapon() {
+		if(currentWeapon == rifle) ChangeWeapon(grenade);
+		else ChangeWeapon(rifle);
 	}
 
 	// Update is called once per frame
 	void Update () {
-		if(Input.GetKeyDown(KeyCode.Alpha1)) {
-			ChangeWeapon(rifle);
-		}
-		if(Input.GetKeyDown(KeyCode.Alpha2)) {
-			ChangeWeapon(grenade);
+		if(Input.GetAxisRaw("Change Weapon") != 0) {
+			ToggleWeapon();
 		}
 
 		if(Input.GetButtonDown("Fire1")) {
