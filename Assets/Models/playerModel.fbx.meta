@@ -1,0 +1,1824 @@
+fileFormatVersion: 2
+guid: 2f508f1a46e24684e85c9b5570b3df8b
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: Armature
+    100002: Armature|chest
+    100004: Armature|head
+    100006: Armature|hip
+    100008: Armature|lcalf
+    100010: Armature|lcalf.001
+    100012: Armature|lfist
+    100014: Armature|lfoot
+    100016: Armature|lfoot.001
+    100018: Armature|llowerarm
+    100020: Armature|lshoulder
+    100022: Armature|lthigh
+    100024: Armature|lthigh.001
+    100026: Armature|ltoes
+    100028: Armature|ltoes.001
+    100030: Armature|lupperarm
+    100032: Armature|neck
+    100034: Armature|rfist
+    100036: Armature|rlowerarm
+    100038: Armature|rshoulder
+    100040: Armature|rupperarm
+    100042: Armature|stomach
+    100044: Cube
+    100046: //RootNode
+    400000: Armature
+    400002: Armature|chest
+    400004: Armature|head
+    400006: Armature|hip
+    400008: Armature|lcalf
+    400010: Armature|lcalf.001
+    400012: Armature|lfist
+    400014: Armature|lfoot
+    400016: Armature|lfoot.001
+    400018: Armature|llowerarm
+    400020: Armature|lshoulder
+    400022: Armature|lthigh
+    400024: Armature|lthigh.001
+    400026: Armature|ltoes
+    400028: Armature|ltoes.001
+    400030: Armature|lupperarm
+    400032: Armature|neck
+    400034: Armature|rfist
+    400036: Armature|rlowerarm
+    400038: Armature|rshoulder
+    400040: Armature|rupperarm
+    400042: Armature|stomach
+    400044: Cube
+    400046: //RootNode
+    4300000: Cube
+    7400000: Run
+    7400002: shooting
+    7400004: shootingheavy
+    7400006: shootingSUPERHEAVY
+    7400008: BALLS!
+    7400010: Lookingaround
+    7400012: Middlefinger
+    7400014: Idle
+    7400016: Armature|BALLS!
+    7400018: Armature|Idle
+    7400020: Armature|Lookingaround
+    7400022: Armature|Middlefinger
+    7400024: Armature|Run
+    7400026: Armature|shooting
+    7400028: Armature|shootingheavy
+    7400030: Armature|shootingSUPERHEAVY
+    7400032: shooting.001
+    7400034: Shoulderroll
+    7400036: Armature|Shoulderroll
+    7400038: Armature|Idle0
+    9500000: //RootNode
+    13700000: Cube
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 3
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Armature|Idle0
+      takeName: Armature|Idle
+      firstFrame: 0
+      lastFrame: 44
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Armature|hip
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh/Armature|lcalf
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh/Armature|lcalf/Armature|lfoot
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh/Armature|lcalf/Armature|lfoot/Armature|ltoes
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh.001
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh.001/Armature|lcalf.001
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh.001/Armature|lcalf.001/Armature|lfoot.001
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh.001/Armature|lcalf.001/Armature|lfoot.001/Armature|ltoes.001
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|lshoulder
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|lshoulder/Armature|lupperarm
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|lshoulder/Armature|lupperarm/Armature|llowerarm
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|lshoulder/Armature|lupperarm/Armature|llowerarm/Armature|lfist
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|neck
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|neck/Armature|head
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|rshoulder
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|rshoulder/Armature|rupperarm
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|rshoulder/Armature|rupperarm/Armature|rlowerarm
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|rshoulder/Armature|rupperarm/Armature|rlowerarm/Armature|rfist
+        weight: 1
+      - path: Cube
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: shooting
+      takeName: shooting
+      firstFrame: 0
+      lastFrame: 4
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Armature|hip
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh/Armature|lcalf
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh/Armature|lcalf/Armature|lfoot
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh/Armature|lcalf/Armature|lfoot/Armature|ltoes
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh.001
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh.001/Armature|lcalf.001
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh.001/Armature|lcalf.001/Armature|lfoot.001
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh.001/Armature|lcalf.001/Armature|lfoot.001/Armature|ltoes.001
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|lshoulder
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|lshoulder/Armature|lupperarm
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|lshoulder/Armature|lupperarm/Armature|llowerarm
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|lshoulder/Armature|lupperarm/Armature|llowerarm/Armature|lfist
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|neck
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|neck/Armature|head
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|rshoulder
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|rshoulder/Armature|rupperarm
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|rshoulder/Armature|rupperarm/Armature|rlowerarm
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|rshoulder/Armature|rupperarm/Armature|rlowerarm/Armature|rfist
+        weight: 1
+      - path: Cube
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: shootingheavy
+      takeName: shootingheavy
+      firstFrame: 0
+      lastFrame: 9
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Armature|hip
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh/Armature|lcalf
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh/Armature|lcalf/Armature|lfoot
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh/Armature|lcalf/Armature|lfoot/Armature|ltoes
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh.001
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh.001/Armature|lcalf.001
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh.001/Armature|lcalf.001/Armature|lfoot.001
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh.001/Armature|lcalf.001/Armature|lfoot.001/Armature|ltoes.001
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|lshoulder
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|lshoulder/Armature|lupperarm
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|lshoulder/Armature|lupperarm/Armature|llowerarm
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|lshoulder/Armature|lupperarm/Armature|llowerarm/Armature|lfist
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|neck
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|neck/Armature|head
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|rshoulder
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|rshoulder/Armature|rupperarm
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|rshoulder/Armature|rupperarm/Armature|rlowerarm
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|rshoulder/Armature|rupperarm/Armature|rlowerarm/Armature|rfist
+        weight: 1
+      - path: Cube
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: shootingSUPERHEAVY
+      takeName: shootingSUPERHEAVY
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Armature|hip
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh/Armature|lcalf
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh/Armature|lcalf/Armature|lfoot
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh/Armature|lcalf/Armature|lfoot/Armature|ltoes
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh.001
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh.001/Armature|lcalf.001
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh.001/Armature|lcalf.001/Armature|lfoot.001
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh.001/Armature|lcalf.001/Armature|lfoot.001/Armature|ltoes.001
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|lshoulder
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|lshoulder/Armature|lupperarm
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|lshoulder/Armature|lupperarm/Armature|llowerarm
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|lshoulder/Armature|lupperarm/Armature|llowerarm/Armature|lfist
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|neck
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|neck/Armature|head
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|rshoulder
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|rshoulder/Armature|rupperarm
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|rshoulder/Armature|rupperarm/Armature|rlowerarm
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|rshoulder/Armature|rupperarm/Armature|rlowerarm/Armature|rfist
+        weight: 1
+      - path: Cube
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: BALLS!
+      takeName: BALLS!
+      firstFrame: 0
+      lastFrame: 49
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Armature|hip
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh/Armature|lcalf
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh/Armature|lcalf/Armature|lfoot
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh/Armature|lcalf/Armature|lfoot/Armature|ltoes
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh.001
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh.001/Armature|lcalf.001
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh.001/Armature|lcalf.001/Armature|lfoot.001
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh.001/Armature|lcalf.001/Armature|lfoot.001/Armature|ltoes.001
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|lshoulder
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|lshoulder/Armature|lupperarm
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|lshoulder/Armature|lupperarm/Armature|llowerarm
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|lshoulder/Armature|lupperarm/Armature|llowerarm/Armature|lfist
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|neck
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|neck/Armature|head
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|rshoulder
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|rshoulder/Armature|rupperarm
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|rshoulder/Armature|rupperarm/Armature|rlowerarm
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|rshoulder/Armature|rupperarm/Armature|rlowerarm/Armature|rfist
+        weight: 1
+      - path: Cube
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Lookingaround
+      takeName: Lookingaround
+      firstFrame: 0
+      lastFrame: 98
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Armature|hip
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh/Armature|lcalf
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh/Armature|lcalf/Armature|lfoot
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh/Armature|lcalf/Armature|lfoot/Armature|ltoes
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh.001
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh.001/Armature|lcalf.001
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh.001/Armature|lcalf.001/Armature|lfoot.001
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh.001/Armature|lcalf.001/Armature|lfoot.001/Armature|ltoes.001
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|lshoulder
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|lshoulder/Armature|lupperarm
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|lshoulder/Armature|lupperarm/Armature|llowerarm
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|lshoulder/Armature|lupperarm/Armature|llowerarm/Armature|lfist
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|neck
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|neck/Armature|head
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|rshoulder
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|rshoulder/Armature|rupperarm
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|rshoulder/Armature|rupperarm/Armature|rlowerarm
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|rshoulder/Armature|rupperarm/Armature|rlowerarm/Armature|rfist
+        weight: 1
+      - path: Cube
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Middlefinger
+      takeName: Middlefinger
+      firstFrame: 0
+      lastFrame: 44
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Armature|hip
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh/Armature|lcalf
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh/Armature|lcalf/Armature|lfoot
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh/Armature|lcalf/Armature|lfoot/Armature|ltoes
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh.001
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh.001/Armature|lcalf.001
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh.001/Armature|lcalf.001/Armature|lfoot.001
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh.001/Armature|lcalf.001/Armature|lfoot.001/Armature|ltoes.001
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|lshoulder
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|lshoulder/Armature|lupperarm
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|lshoulder/Armature|lupperarm/Armature|llowerarm
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|lshoulder/Armature|lupperarm/Armature|llowerarm/Armature|lfist
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|neck
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|neck/Armature|head
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|rshoulder
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|rshoulder/Armature|rupperarm
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|rshoulder/Armature|rupperarm/Armature|rlowerarm
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|rshoulder/Armature|rupperarm/Armature|rlowerarm/Armature|rfist
+        weight: 1
+      - path: Cube
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Idle
+      takeName: Idle
+      firstFrame: 0
+      lastFrame: 44
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Armature|hip
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh/Armature|lcalf
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh/Armature|lcalf/Armature|lfoot
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh/Armature|lcalf/Armature|lfoot/Armature|ltoes
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh.001
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh.001/Armature|lcalf.001
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh.001/Armature|lcalf.001/Armature|lfoot.001
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh.001/Armature|lcalf.001/Armature|lfoot.001/Armature|ltoes.001
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|lshoulder
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|lshoulder/Armature|lupperarm
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|lshoulder/Armature|lupperarm/Armature|llowerarm
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|lshoulder/Armature|lupperarm/Armature|llowerarm/Armature|lfist
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|neck
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|neck/Armature|head
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|rshoulder
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|rshoulder/Armature|rupperarm
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|rshoulder/Armature|rupperarm/Armature|rlowerarm
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|rshoulder/Armature|rupperarm/Armature|rlowerarm/Armature|rfist
+        weight: 1
+      - path: Cube
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: shooting.001
+      takeName: shooting.001
+      firstFrame: 0
+      lastFrame: 4
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Armature|hip
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh/Armature|lcalf
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh/Armature|lcalf/Armature|lfoot
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh/Armature|lcalf/Armature|lfoot/Armature|ltoes
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh.001
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh.001/Armature|lcalf.001
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh.001/Armature|lcalf.001/Armature|lfoot.001
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh.001/Armature|lcalf.001/Armature|lfoot.001/Armature|ltoes.001
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|lshoulder
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|lshoulder/Armature|lupperarm
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|lshoulder/Armature|lupperarm/Armature|llowerarm
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|lshoulder/Armature|lupperarm/Armature|llowerarm/Armature|lfist
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|neck
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|neck/Armature|head
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|rshoulder
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|rshoulder/Armature|rupperarm
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|rshoulder/Armature|rupperarm/Armature|rlowerarm
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|rshoulder/Armature|rupperarm/Armature|rlowerarm/Armature|rfist
+        weight: 1
+      - path: Cube
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Shoulderroll
+      takeName: Shoulderroll
+      firstFrame: 0
+      lastFrame: 99
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Armature|hip
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh/Armature|lcalf
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh/Armature|lcalf/Armature|lfoot
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh/Armature|lcalf/Armature|lfoot/Armature|ltoes
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh.001
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh.001/Armature|lcalf.001
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh.001/Armature|lcalf.001/Armature|lfoot.001
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh.001/Armature|lcalf.001/Armature|lfoot.001/Armature|ltoes.001
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|lshoulder
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|lshoulder/Armature|lupperarm
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|lshoulder/Armature|lupperarm/Armature|llowerarm
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|lshoulder/Armature|lupperarm/Armature|llowerarm/Armature|lfist
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|neck
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|neck/Armature|head
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|rshoulder
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|rshoulder/Armature|rupperarm
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|rshoulder/Armature|rupperarm/Armature|rlowerarm
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|rshoulder/Armature|rupperarm/Armature|rlowerarm/Armature|rfist
+        weight: 1
+      - path: Cube
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Armature|BALLS!
+      takeName: Armature|BALLS!
+      firstFrame: 0
+      lastFrame: 49
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Armature|hip
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh/Armature|lcalf
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh/Armature|lcalf/Armature|lfoot
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh/Armature|lcalf/Armature|lfoot/Armature|ltoes
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh.001
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh.001/Armature|lcalf.001
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh.001/Armature|lcalf.001/Armature|lfoot.001
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh.001/Armature|lcalf.001/Armature|lfoot.001/Armature|ltoes.001
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|lshoulder
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|lshoulder/Armature|lupperarm
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|lshoulder/Armature|lupperarm/Armature|llowerarm
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|lshoulder/Armature|lupperarm/Armature|llowerarm/Armature|lfist
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|neck
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|neck/Armature|head
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|rshoulder
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|rshoulder/Armature|rupperarm
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|rshoulder/Armature|rupperarm/Armature|rlowerarm
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|rshoulder/Armature|rupperarm/Armature|rlowerarm/Armature|rfist
+        weight: 1
+      - path: Cube
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Armature|Idle
+      takeName: Armature|Idle
+      firstFrame: 0
+      lastFrame: 44
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Armature|hip
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh/Armature|lcalf
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh/Armature|lcalf/Armature|lfoot
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh/Armature|lcalf/Armature|lfoot/Armature|ltoes
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh.001
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh.001/Armature|lcalf.001
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh.001/Armature|lcalf.001/Armature|lfoot.001
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh.001/Armature|lcalf.001/Armature|lfoot.001/Armature|ltoes.001
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|lshoulder
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|lshoulder/Armature|lupperarm
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|lshoulder/Armature|lupperarm/Armature|llowerarm
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|lshoulder/Armature|lupperarm/Armature|llowerarm/Armature|lfist
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|neck
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|neck/Armature|head
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|rshoulder
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|rshoulder/Armature|rupperarm
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|rshoulder/Armature|rupperarm/Armature|rlowerarm
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|rshoulder/Armature|rupperarm/Armature|rlowerarm/Armature|rfist
+        weight: 1
+      - path: Cube
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Armature|Lookingaround
+      takeName: Armature|Lookingaround
+      firstFrame: 0
+      lastFrame: 98
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Armature|hip
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh/Armature|lcalf
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh/Armature|lcalf/Armature|lfoot
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh/Armature|lcalf/Armature|lfoot/Armature|ltoes
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh.001
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh.001/Armature|lcalf.001
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh.001/Armature|lcalf.001/Armature|lfoot.001
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh.001/Armature|lcalf.001/Armature|lfoot.001/Armature|ltoes.001
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|lshoulder
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|lshoulder/Armature|lupperarm
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|lshoulder/Armature|lupperarm/Armature|llowerarm
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|lshoulder/Armature|lupperarm/Armature|llowerarm/Armature|lfist
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|neck
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|neck/Armature|head
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|rshoulder
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|rshoulder/Armature|rupperarm
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|rshoulder/Armature|rupperarm/Armature|rlowerarm
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|rshoulder/Armature|rupperarm/Armature|rlowerarm/Armature|rfist
+        weight: 1
+      - path: Cube
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Armature|Middlefinger
+      takeName: Armature|Middlefinger
+      firstFrame: 0
+      lastFrame: 44
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Armature|hip
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh/Armature|lcalf
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh/Armature|lcalf/Armature|lfoot
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh/Armature|lcalf/Armature|lfoot/Armature|ltoes
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh.001
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh.001/Armature|lcalf.001
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh.001/Armature|lcalf.001/Armature|lfoot.001
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh.001/Armature|lcalf.001/Armature|lfoot.001/Armature|ltoes.001
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|lshoulder
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|lshoulder/Armature|lupperarm
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|lshoulder/Armature|lupperarm/Armature|llowerarm
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|lshoulder/Armature|lupperarm/Armature|llowerarm/Armature|lfist
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|neck
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|neck/Armature|head
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|rshoulder
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|rshoulder/Armature|rupperarm
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|rshoulder/Armature|rupperarm/Armature|rlowerarm
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|rshoulder/Armature|rupperarm/Armature|rlowerarm/Armature|rfist
+        weight: 1
+      - path: Cube
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Armature|Run
+      takeName: Armature|Run
+      firstFrame: 0
+      lastFrame: 19
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Armature|hip
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh/Armature|lcalf
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh/Armature|lcalf/Armature|lfoot
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh/Armature|lcalf/Armature|lfoot/Armature|ltoes
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh.001
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh.001/Armature|lcalf.001
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh.001/Armature|lcalf.001/Armature|lfoot.001
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh.001/Armature|lcalf.001/Armature|lfoot.001/Armature|ltoes.001
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|lshoulder
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|lshoulder/Armature|lupperarm
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|lshoulder/Armature|lupperarm/Armature|llowerarm
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|lshoulder/Armature|lupperarm/Armature|llowerarm/Armature|lfist
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|neck
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|neck/Armature|head
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|rshoulder
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|rshoulder/Armature|rupperarm
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|rshoulder/Armature|rupperarm/Armature|rlowerarm
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|rshoulder/Armature|rupperarm/Armature|rlowerarm/Armature|rfist
+        weight: 1
+      - path: Cube
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Armature|shooting
+      takeName: Armature|shooting
+      firstFrame: 0
+      lastFrame: 4
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Armature|hip
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh/Armature|lcalf
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh/Armature|lcalf/Armature|lfoot
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh/Armature|lcalf/Armature|lfoot/Armature|ltoes
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh.001
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh.001/Armature|lcalf.001
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh.001/Armature|lcalf.001/Armature|lfoot.001
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh.001/Armature|lcalf.001/Armature|lfoot.001/Armature|ltoes.001
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|lshoulder
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|lshoulder/Armature|lupperarm
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|lshoulder/Armature|lupperarm/Armature|llowerarm
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|lshoulder/Armature|lupperarm/Armature|llowerarm/Armature|lfist
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|neck
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|neck/Armature|head
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|rshoulder
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|rshoulder/Armature|rupperarm
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|rshoulder/Armature|rupperarm/Armature|rlowerarm
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|rshoulder/Armature|rupperarm/Armature|rlowerarm/Armature|rfist
+        weight: 1
+      - path: Cube
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Armature|shootingheavy
+      takeName: Armature|shootingheavy
+      firstFrame: 0
+      lastFrame: 9
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Armature|hip
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh/Armature|lcalf
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh/Armature|lcalf/Armature|lfoot
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh/Armature|lcalf/Armature|lfoot/Armature|ltoes
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh.001
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh.001/Armature|lcalf.001
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh.001/Armature|lcalf.001/Armature|lfoot.001
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh.001/Armature|lcalf.001/Armature|lfoot.001/Armature|ltoes.001
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|lshoulder
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|lshoulder/Armature|lupperarm
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|lshoulder/Armature|lupperarm/Armature|llowerarm
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|lshoulder/Armature|lupperarm/Armature|llowerarm/Armature|lfist
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|neck
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|neck/Armature|head
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|rshoulder
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|rshoulder/Armature|rupperarm
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|rshoulder/Armature|rupperarm/Armature|rlowerarm
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|rshoulder/Armature|rupperarm/Armature|rlowerarm/Armature|rfist
+        weight: 1
+      - path: Cube
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Armature|shootingSUPERHEAVY
+      takeName: Armature|shootingSUPERHEAVY
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Armature|hip
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh/Armature|lcalf
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh/Armature|lcalf/Armature|lfoot
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh/Armature|lcalf/Armature|lfoot/Armature|ltoes
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh.001
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh.001/Armature|lcalf.001
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh.001/Armature|lcalf.001/Armature|lfoot.001
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh.001/Armature|lcalf.001/Armature|lfoot.001/Armature|ltoes.001
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|lshoulder
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|lshoulder/Armature|lupperarm
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|lshoulder/Armature|lupperarm/Armature|llowerarm
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|lshoulder/Armature|lupperarm/Armature|llowerarm/Armature|lfist
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|neck
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|neck/Armature|head
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|rshoulder
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|rshoulder/Armature|rupperarm
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|rshoulder/Armature|rupperarm/Armature|rlowerarm
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|rshoulder/Armature|rupperarm/Armature|rlowerarm/Armature|rfist
+        weight: 1
+      - path: Cube
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Armature|Shoulderroll
+      takeName: Armature|Shoulderroll
+      firstFrame: 0
+      lastFrame: 99
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Armature|hip
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh/Armature|lcalf
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh/Armature|lcalf/Armature|lfoot
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh/Armature|lcalf/Armature|lfoot/Armature|ltoes
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh.001
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh.001/Armature|lcalf.001
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh.001/Armature|lcalf.001/Armature|lfoot.001
+        weight: 1
+      - path: Armature/Armature|hip/Armature|lthigh.001/Armature|lcalf.001/Armature|lfoot.001/Armature|ltoes.001
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|lshoulder
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|lshoulder/Armature|lupperarm
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|lshoulder/Armature|lupperarm/Armature|llowerarm
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|lshoulder/Armature|lupperarm/Armature|llowerarm/Armature|lfist
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|neck
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|neck/Armature|head
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|rshoulder
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|rshoulder/Armature|rupperarm
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|rshoulder/Armature|rupperarm/Armature|rlowerarm
+        weight: 1
+      - path: Armature/Armature|hip/Armature|stomach/Armature|chest/Armature|rshoulder/Armature|rupperarm/Armature|rlowerarm/Armature|rfist
+        weight: 1
+      - path: Cube
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human:
+    - boneName: Armature|hip
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Armature|lthigh
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Armature|lthigh.001
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Armature|lcalf
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Armature|lcalf.001
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Armature|lfoot
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Armature|lfoot.001
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Armature|stomach
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Armature|chest
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Armature|neck
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Armature|head
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Armature|lshoulder
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Armature|rshoulder
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Armature|lupperarm
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Armature|rupperarm
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Armature|llowerarm
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Armature|rlowerarm
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Armature|lfist
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Armature|rfist
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Armature|ltoes
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Armature|ltoes.001
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: playerModel(Clone)
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Armature
+      position: {x: 6.83367352e-06, y: 1.24263761e-05, z: -3.61710408e-05}
+      rotation: {x: -.707106888, y: 0, z: -0, w: .707106769}
+      scale: {x: 2.90598154, y: 2.90598154, z: 2.90598154}
+      transformModified: 1
+    - name: Armature|hip
+      position: {x: -9.37272853e-06, y: 7.01561876e-05, z: .0117328549}
+      rotation: {x: -.410527259, y: .575731993, z: .54154563, w: -.454673916}
+      scale: {x: 1, y: 1, z: .999999881}
+      transformModified: 1
+    - name: Armature|stomach
+      position: {x: -5.82076574e-12, y: .00426428579, z: -6.9212947e-12}
+      rotation: {x: -.0174303316, y: -.109511502, z: .0782884285, w: .990744352}
+      scale: {x: .999999881, y: 1, z: 1}
+      transformModified: 1
+    - name: Armature|chest
+      position: {x: 3.72529022e-11, y: .00437291339, z: 6.51925805e-11}
+      rotation: {x: 6.9606978e-09, y: 5.64052343e-08, z: -.0423847549, w: .9991014}
+      scale: {x: .999999881, y: .999999881, z: 1}
+      transformModified: 1
+    - name: Armature|lshoulder
+      position: {x: 2.60770322e-10, y: .00189274072, z: -3.36457598e-11}
+      rotation: {x: -.390476376, y: .579007685, z: .55561316, w: -.451190025}
+      scale: {x: .999999821, y: .999999821, z: .999999642}
+      transformModified: 1
+    - name: Armature|lupperarm
+      position: {x: -1.20489851e-09, y: .00576010579, z: -2.98023217e-10}
+      rotation: {x: .0391171388, y: .912713289, z: -.164992362, w: -.371754974}
+      scale: {x: 1.00000012, y: .999999881, z: 1}
+      transformModified: 1
+    - name: Armature|llowerarm
+      position: {x: -1.08033416e-09, y: .00556470128, z: -5.58793511e-10}
+      rotation: {x: .00910223182, y: .996822178, z: .00293354248, w: -.0790827945}
+      scale: {x: 1, y: .999999762, z: .99999994}
+      transformModified: 1
+    - name: Armature|lfist
+      position: {x: -1.00582831e-09, y: .0046303058, z: 7.07805148e-10}
+      rotation: {x: -.0439668559, y: .164677903, z: .0313593745, w: .984867871}
+      scale: {x: 1, y: .99999994, z: 1.00000012}
+      transformModified: 1
+    - name: Armature|rshoulder
+      position: {x: 2.60770322e-10, y: .00189274072, z: -3.36457598e-11}
+      rotation: {x: -.495266706, y: .569590271, z: -.516245365, w: .404683292}
+      scale: {x: .99999994, y: .999999762, z: .999999762}
+      transformModified: 1
+    - name: Armature|rupperarm
+      position: {x: 2.38884246e-09, y: .00616451539, z: 6.33299357e-10}
+      rotation: {x: .0465537198, y: .990637541, z: -.101023369, w: -.0791473538}
+      scale: {x: 1.00000036, y: 1, z: 1.00000024}
+      transformModified: 1
+    - name: Armature|rlowerarm
+      position: {x: 8.94069652e-10, y: .0054583014, z: -4.47034826e-10}
+      rotation: {x: .00290322793, y: .97294426, z: -.0241834205, w: .229752749}
+      scale: {x: 1, y: 1.00000024, z: .999999881}
+      transformModified: 1
+    - name: Armature|rfist
+      position: {x: 2.98023217e-10, y: .00454243599, z: -2.98023217e-10}
+      rotation: {x: -.0160198808, y: -.0876510665, z: .012457503, w: .9959445}
+      scale: {x: .99999994, y: .999999881, z: 1.00000012}
+      transformModified: 1
+    - name: Armature|neck
+      position: {x: 2.60770322e-10, y: .00189274072, z: -3.36457598e-11}
+      rotation: {x: .0746305659, y: .169240177, z: -.188600108, w: .964478135}
+      scale: {x: .999999821, y: .999999762, z: 1}
+      transformModified: 1
+    - name: Armature|head
+      position: {x: 3.282912e-10, y: .00394248357, z: -4.19095147e-10}
+      rotation: {x: -.000929634203, y: -.000380247046, z: .103520051, w: .99462688}
+      scale: {x: 1, y: .999999881, z: .99999994}
+      transformModified: 1
+    - name: Armature|lthigh
+      position: {x: .000915304001, y: .000889001996, z: .00133742543}
+      rotation: {x: .0566160753, y: .0689888373, z: .97567457, w: -.200236022}
+      scale: {x: .999949396, y: .999996424, z: .999964535}
+      transformModified: 1
+    - name: Armature|lcalf
+      position: {x: -3.72529022e-11, y: .00671696104, z: -2.23517413e-10}
+      rotation: {x: -.068832092, y: .0282083116, z: -.311871409, w: .947207808}
+      scale: {x: .999999881, y: .99999994, z: .999999881}
+      transformModified: 1
+    - name: Armature|lfoot
+      position: {x: -1.67638056e-10, y: .00670638354, z: 7.21775001e-11}
+      rotation: {x: .0212546308, y: -.013028455, z: .760492563, w: .648867905}
+      scale: {x: .99999994, y: 1.00000012, z: 1.00000012}
+      transformModified: 1
+    - name: Armature|ltoes
+      position: {x: -2.3283063e-11, y: .00149677345, z: 1.39698378e-10}
+      rotation: {x: 6.76664169e-10, y: 4.75032721e-06, z: 1.47847476e-08, w: 1}
+      scale: {x: .99999994, y: .99999994, z: 1}
+      transformModified: 1
+    - name: Armature|lthigh.001
+      position: {x: -.000705805607, y: .00176040898, z: -.00134664937}
+      rotation: {x: .36529389, y: -.0872483775, z: .925373018, w: -.0513123944}
+      scale: {x: 1.00000083, y: 1.00001132, z: 1.00015283}
+      transformModified: 1
+    - name: Armature|lcalf.001
+      position: {x: 5.02914155e-10, y: .00671696058, z: 3.07336434e-10}
+      rotation: {x: .0950068682, y: .00637894962, z: -.252324551, w: .962946177}
+      scale: {x: 1.00000012, y: 1.00000036, z: 1}
+      transformModified: 1
+    - name: Armature|lfoot.001
+      position: {x: 1.67638056e-10, y: .00670638261, z: -1.95577735e-10}
+      rotation: {x: -.00836525112, y: .160883844, z: .800576746, w: .577168465}
+      scale: {x: .999999821, y: .999999881, z: 1.00000012}
+      transformModified: 1
+    - name: Armature|ltoes.001
+      position: {x: -1.73567966e-10, y: .00149677333, z: -3.60305424e-10}
+      rotation: {x: 5.646144e-09, y: -3.97441954e-06, z: -2.32830644e-09, w: 1}
+      scale: {x: .99999994, y: 1, z: .99999994}
+      transformModified: 1
+    - name: Cube
+      position: {x: -2.91038298e-13, y: 1.28056853e-11, z: 1.6400008e-09}
+      rotation: {x: .700909436, y: -2.58673074e-13, z: 1.48198884e-11, w: .713250279}
+      scale: {x: .34411782, y: .34411785, z: .34411785}
+      transformModified: 1
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 3
+  additionalBone: 0
+  userData: 
