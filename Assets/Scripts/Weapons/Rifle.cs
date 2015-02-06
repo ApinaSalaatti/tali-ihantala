@@ -49,13 +49,13 @@ public class Rifle : Weapon {
 		b.rigidbody.AddForce(shootDir * shootForce, ForceMode.Impulse);
 
 
-		Rigidbody shell;
-		shell=Instantiate (shellPrefab,transform.position, transform.rotation) as Rigidbody;
-		shell.rigidbody.velocity=rigidbody.velocity;
+		GameObject s = Instantiate (shellPrefab,transform.position, transform.rotation) as GameObject;
+		Rigidbody shell = s.GetComponent<Rigidbody>();
+		//shell.velocity = rigidbody.velocity;
 		//MIKSI VITUSSA TÄMÄ TOIMI TOISESSA PROJEKTISSA MUTTA EI TÄSSÄ?!
-		shell.AddForce (Vector3.right*Random.Range (0,200),ForceMode.Impulse);
-		shell.AddTorque (Vector3.up*Random.Range (0,10));
-		shell.AddTorque (Vector3.forward*Random.Range (0,10));
+		shell.AddForce (transform.TransformDirection(Vector3.right*Random.Range (0, 0.1f)), ForceMode.Impulse);
+		shell.AddTorque (Vector3.up*Random.Range (0, 10f));
+		shell.AddTorque (Vector3.forward*Random.Range(0, 10f));
 	}
 
 	private IEnumerator MuzzleFlash() {
