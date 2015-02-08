@@ -2,7 +2,7 @@
 using System.Collections;
 
 public abstract class Weapon : MonoBehaviour {
-	public float timeBetweenShots = 0.5f;
+	public float timeBetweenShots = 0.9f;
 
 	private bool firing = false;
 	private float fireTimer = 1f;

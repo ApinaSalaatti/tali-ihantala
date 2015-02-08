@@ -7,6 +7,8 @@ public class Rifle : Weapon {
 	public GameObject bulletPrefab;
 	public GameObject shellPrefab;
 	public float inaccuracy;
+	public float shellminimumforce;
+	public float shellmaximumforce;
 	//private LineRenderer fireLine;
 	
 	// Use this for initialization
@@ -51,11 +53,9 @@ public class Rifle : Weapon {
 
 		GameObject s = Instantiate (shellPrefab,transform.position, transform.rotation) as GameObject;
 		Rigidbody shell = s.GetComponent<Rigidbody>();
-		//shell.velocity = rigidbody.velocity;
-		//MIKSI VITUSSA TÄMÄ TOIMI TOISESSA PROJEKTISSA MUTTA EI TÄSSÄ?!
-		shell.AddForce (transform.TransformDirection(Vector3.right*Random.Range (0, 0.1f)), ForceMode.Impulse);
-		shell.AddTorque (Vector3.up*Random.Range (0, 10f));
-		shell.AddTorque (Vector3.forward*Random.Range(0, 10f));
+		shell.AddForce (transform.TransformDirection(Vector3.right*Random.Range (shellminimumforce, shellmaximumforce)), ForceMode.Impulse);
+		shell.AddTorque (Vector3.up*Random.Range (10f, 100f));
+		shell.AddTorque (Vector3.forward*Random.Range(10f, 100f));
 	}
 
 	private IEnumerator MuzzleFlash() {
