@@ -9,11 +9,24 @@ public class Rifle : Weapon {
 	public float inaccuracy;
 	public float shellminimumforce;
 	public float shellmaximumforce;
-	//private LineRenderer fireLine;
-	
+
 	// Use this for initialization
 	void Start () {
-		//fireLine = GetComponent<LineRenderer>();
+	}
+
+	private float burstTimer = 0f;
+
+	protected override void WeaponUpdate ()
+	{
+		if(firing) {
+			burstTimer += 0.5f * Time.deltaTime;
+			if(burstTimer > 1f) burstTimer = 1f;
+		}
+		else {
+			burstTimer -= Time.deltaTime;
+			if(burstTimer < 0f)
+				burstTimer = 0f;
+		}
 	}
 
 	/*
@@ -46,7 +59,8 @@ public class Rifle : Weapon {
 		GameObject b = (GameObject)Instantiate(bulletPrefab, transform.position + transform.forward, Quaternion.identity);
 		Vector3 shootDir = Vector3.forward;
 		// Add some inaccuracy 'cause it looks cool!
-		shootDir.x += Random.Range(-inaccuracy, inaccuracy);
+		float inacc = Random.Range(-inaccuracy, inaccuracy) * burstTimer; // The inaccuracy increases the longer you fire
+		shootDir.x += inacc;
 		shootDir = transform.TransformDirection(shootDir.normalized);
 		b.rigidbody.AddForce(shootDir * shootForce, ForceMode.Impulse);
 

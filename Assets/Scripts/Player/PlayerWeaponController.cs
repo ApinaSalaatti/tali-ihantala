@@ -23,6 +23,10 @@ public class PlayerWeaponController : MonoBehaviour {
 		currentWeapon = rifle;
 	}
 
+	public void AimAt(Vector3 target) {
+		currentWeapon.AimAt(target);
+	}
+
 	private void ChangeWeapon(Weapon newWeapon) {
 		currentWeapon.TriggerReleased();
 		currentWeapon = newWeapon;

@@ -4,9 +4,11 @@ using System.Collections;
 public class PlayerMovement : MonoBehaviour {
 	public float speed = 5f;
 
+	private PlayerWeaponController weapons;
 	private CharacterController controller;
 	// Use this for initialization
 	void Start () {
+		weapons = GetComponent<PlayerWeaponController>();
 		controller = GetComponent<CharacterController>();
 	}
 	
@@ -20,6 +22,9 @@ public class PlayerMovement : MonoBehaviour {
 		RaycastHit hit;
 		if(Physics.Raycast(ray,out hit, 100f)) {
 			Vector3 mousePos = hit.point;
+
+			weapons.AimAt(mousePos);
+
 			mousePos.y = transform.position.y;
 			transform.LookAt(mousePos);
 		}
