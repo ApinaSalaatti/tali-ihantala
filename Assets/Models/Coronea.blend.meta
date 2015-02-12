@@ -19,6 +19,9 @@ ModelImporter:
     100026: House2
     100028: Baths
     100030: Patsas
+    100032: Fountain
+    100034: Patsasalusta
+    100036: Marketwood
     400000: //RootNode
     400002: Plane
     400004: Plane_001
@@ -35,6 +38,9 @@ ModelImporter:
     400026: House2
     400028: Baths
     400030: Patsas
+    400032: Fountain
+    400034: Patsasalusta
+    400036: Marketwood
     2300000: Plane
     2300002: Plane_001
     2300004: Plane_002
@@ -50,6 +56,9 @@ ModelImporter:
     2300024: House2
     2300026: Baths
     2300028: Patsas
+    2300030: Fountain
+    2300032: Patsasalusta
+    2300034: Marketwood
     3300000: Plane
     3300002: Plane_001
     3300004: Plane_002
@@ -65,6 +74,9 @@ ModelImporter:
     3300024: House2
     3300026: Baths
     3300028: Patsas
+    3300030: Fountain
+    3300032: Patsasalusta
+    3300034: Marketwood
     4300000: Plane_001
     4300002: Plane
     4300004: Plane_005
@@ -80,6 +92,9 @@ ModelImporter:
     4300024: House2
     4300026: Baths
     4300028: Patsas
+    4300030: Fountain
+    4300032: Patsasalusta
+    4300034: Marketwood
     7400000: Default Take
     9500000: //RootNode
   materials:
