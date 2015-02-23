@@ -22,6 +22,9 @@ ModelImporter:
     100032: Fountain
     100034: Patsasalusta
     100036: Marketwood
+    100038: Bathfloor
+    100040: Universitywood
+    100042: Universitystatue
     400000: //RootNode
     400002: Plane
     400004: Plane_001
@@ -41,6 +44,9 @@ ModelImporter:
     400032: Fountain
     400034: Patsasalusta
     400036: Marketwood
+    400038: Bathfloor
+    400040: Universitywood
+    400042: Universitystatue
     2300000: Plane
     2300002: Plane_001
     2300004: Plane_002
@@ -59,6 +65,9 @@ ModelImporter:
     2300030: Fountain
     2300032: Patsasalusta
     2300034: Marketwood
+    2300036: Bathfloor
+    2300038: Universitywood
+    2300040: Universitystatue
     3300000: Plane
     3300002: Plane_001
     3300004: Plane_002
@@ -77,6 +86,9 @@ ModelImporter:
     3300030: Fountain
     3300032: Patsasalusta
     3300034: Marketwood
+    3300036: Bathfloor
+    3300038: Universitywood
+    3300040: Universitystatue
     4300000: Plane_001
     4300002: Plane
     4300004: Plane_005
@@ -95,6 +107,9 @@ ModelImporter:
     4300030: Fountain
     4300032: Patsasalusta
     4300034: Marketwood
+    4300036: Bathfloor
+    4300038: Universitywood
+    4300040: Universitystatue
     7400000: Default Take
     9500000: //RootNode
   materials:
