@@ -6,6 +6,8 @@ public class PlayerMovement : MonoBehaviour {
 
 	private PlayerWeaponController weapons;
 	private CharacterController controller;
+	private Vector3 movement = new Vector3();
+
 	// Use this for initialization
 	void Start () {
 		weapons = GetComponent<PlayerWeaponController>();
@@ -22,6 +24,7 @@ public class PlayerMovement : MonoBehaviour {
 		RaycastHit hit;
 		if(Physics.Raycast(ray,out hit, 100f)) {
 			Vector3 mousePos = hit.point;
+			Vector3 offset = Vector3.zero;
 
 			weapons.AimAt(mousePos);
 
@@ -29,11 +32,13 @@ public class PlayerMovement : MonoBehaviour {
 			transform.LookAt(mousePos);
 		}
 
-		Vector3 movement = new Vector3(Input.GetAxisRaw("Horizontal"), 0f, Input.GetAxisRaw("Vertical"));
-
 		// Enable this line if you want moving "forward" to move towards the mouse
 		//movement = transform.TransformDirection(movement);
 
 		controller.Move(movement * speed * Time.deltaTime);
+	}
+
+	void SetMovement(Vector3 m) {
+		movement = m;
 	}
 }

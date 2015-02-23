@@ -20,6 +20,10 @@ public class GameHUD : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		weaponText.text = weaponController.CurrentWeapon.name;
+		if(weaponController.CurrentWeapon.ammoLeft > -1) {
+			weaponText.text += " (ammo left: " + weaponController.CurrentWeapon.ammoLeft + ")";
+		}
+
 		healthText.text = "Health: " + playerHealth.CurrentHealth;
 	}
 }

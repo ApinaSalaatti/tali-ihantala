@@ -31,5 +31,7 @@ public class Health : MonoBehaviour {
 		if(health <= 0f) {
 			gameObject.SendMessage("OnDeath", SendMessageOptions.DontRequireReceiver);
 		}
+
+		Debug.Log("HEALTH LEFT: " + CurrentHealth);
 	}
 }
