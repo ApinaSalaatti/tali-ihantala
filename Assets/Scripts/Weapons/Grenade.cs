@@ -26,7 +26,8 @@ public class Grenade : MonoBehaviour {
 		int layerMask = LayerMask.GetMask("Destroyable", "Enemy");
 		Collider[] cols = Physics.OverlapSphere(transform.position, blastRadius, layerMask);
 		foreach(Collider col in cols) {
-			col.gameObject.SendMessage("TakeDamage", damage);
+			if(col.gameObject != gameObject)
+				col.gameObject.SendMessage("TakeDamage", damage);
 		}
 
 		Destroy(gameObject);

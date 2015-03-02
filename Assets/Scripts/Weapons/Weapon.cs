@@ -39,5 +39,11 @@ public abstract class Weapon : MonoBehaviour {
 
 	}
 
+	// Override this for weapons that support multiple ammo types
+	public virtual void ChangeAmmoType() {
+
+	}
+
 	protected abstract void Fire();
+	public abstract GameObject GetActiveAmmo();
 }

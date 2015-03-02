@@ -13,4 +13,9 @@ public class GrenadeLauncher : Weapon {
 		launchDir = launchDir.normalized;
 		g.rigidbody.AddForce(launchDir * launchForce, ForceMode.Impulse);
 	}
+
+	public override GameObject GetActiveAmmo ()
+	{
+		return grenadePrefab;
+	}
 }

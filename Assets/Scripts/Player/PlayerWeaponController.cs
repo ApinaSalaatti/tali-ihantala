@@ -13,6 +13,9 @@ public class PlayerWeaponController : MonoBehaviour {
 		}
 	}
 
+	// When showing middle finger, can't shoot
+	private bool isShowingMiddleFinger = false;
+
 	// Use this for initialization
 	void Start () {
 		currentWeapon = rifle;
@@ -37,12 +40,29 @@ public class PlayerWeaponController : MonoBehaviour {
 	}
 
 	void PullTrigger() {
-		currentWeapon.TriggerPulled();
+		if(!isShowingMiddleFinger) {
+			currentWeapon.TriggerPulled();
+			GetComponent<Animator>().SetBool("Shooting", true);
+		}
 	}
 	void ReleaseTrigger() {
 		currentWeapon.TriggerReleased();
+		GetComponent<Animator>().SetBool("Shooting", false);
 	}
 	void ChangeWeapon() {
 		ToggleWeapon();
+	}
+
+	void ChangeAmmoType() {
+		currentWeapon.ChangeAmmoType();
+	}
+
+	void ShowingMiddleFinger() {
+		isShowingMiddleFinger = true;
+		ReleaseTrigger();
+	}
+
+	void NotShowingMiddleFinger() {
+		isShowingMiddleFinger = false;
 	}
 }

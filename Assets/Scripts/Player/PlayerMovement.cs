@@ -3,18 +3,27 @@ using System.Collections;
 
 public class PlayerMovement : MonoBehaviour {
 	public float speed;
+	public float gravity = 9.81f;
+	public float jumpForce = 20f;
+
 	private PlayerWeaponController weapons;
 	private CharacterController controller;
 	private Vector3 movement = new Vector3();
 	private float velocity;
-	Animator anim;
+	private Animator anim;
+	private bool isShowingMiddleFinger = false;
+	private bool jumping = false;
+	private float currentYVel = 0f;
+	private bool grounded = true;
 
 	// Use this for initialization
 	void Start () {
 		weapons = GetComponent<PlayerWeaponController>();
 		controller = GetComponent<CharacterController>();
 		anim = GetComponent<Animator>();
-		
+
+		// Every eight (anim length + 4 secs I think?) seconds check if we are doing anything and if not, play an idle animation
+		InvokeRepeating("IdleAnimations", 4f, 8f);
 	}
 	
 	// Update is called once per frame
@@ -32,59 +41,88 @@ public class PlayerMovement : MonoBehaviour {
 			transform.LookAt(mousePos);
 		}
 
-		if (anim.GetBool ("IsMoving") == false && anim.GetBool ("shooting") == false && anim.GetBool ("Middlefinger") == false) 
-		{
-			StartCoroutine(idleanimations());
+		float h = movement.x;
+		float v = movement.z;
+
+		ray = new Ray(transform.position, Vector3.down);
+		if(Physics.Raycast(ray, out hit, 0.2f)) {
+			grounded = true;
 		}
-		float h = Input.GetAxisRaw ("Horizontal");
-		float v = Input.GetAxisRaw ("Vertical");
+		else {
+			grounded = false;
+		}
 
 		Animating (h,v);
 	}
 
 	void Update () {
-		
-		//Vector3 mousePos = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, transform.position.y));
-		//mousePos.y = transform.position.y;
-		
 		// Enable this line if you want moving "forward" to move towards the mouse
 		//movement = transform.TransformDirection(movement);
+
+		Vector3 mov = movement;
+		mov *= speed;
+
+		if(!grounded) {
+			currentYVel -= gravity;
+		}
+
+		if(jumping) {
+			jumping = false;
+			if(grounded) currentYVel = jumpForce;
+		}
+		mov.y = currentYVel;
+
+		mov *= Time.deltaTime;
 		
-		controller.Move(movement * speed * Time.deltaTime);
-		
-		if(Input.GetButtonDown ("Fire3")&& anim.GetBool("IsMoving") == false && anim.GetBool("shooting") == false)
+		if(!isShowingMiddleFinger) controller.Move(mov);
+	}
+
+	// This gets called by the InputManager
+	void ShowMiddleFinger() {
+		// Can't wave your finger while running or shooting or already showing it
+		if(anim.GetBool("IsMoving") || anim.GetBool("Shooting") || isShowingMiddleFinger) {
+			return;
+		}
+
+		StartCoroutine(MiddleFingerWait());
+	}
+
+	private IEnumerator MiddleFingerWait()
+	{
+		isShowingMiddleFinger = true;
+		anim.SetTrigger("MiddleFinger");
+
+		// This informs the WeaponController that we are flipping the bird
+		gameObject.SendMessage("ShowingMiddleFinger");
+
+		yield return new WaitForSeconds(1.5f);
+		isShowingMiddleFinger = false;
+
+		// This informs the WeaponController that we are no longer flipping the bird
+		gameObject.SendMessage("NotShowingMiddleFinger");
+	}
+
+	private void IdleAnimations()
+	{
+		if (anim.GetBool ("IsMoving") == false && anim.GetBool ("Shooting") == false && isShowingMiddleFinger == false) 
 		{
-			CharacterController cc = GetComponent(typeof(CharacterController)) as CharacterController;
-			cc.enabled = false;
-			anim.SetBool ("Middlefinger", true);
-			StartCoroutine(mfwait());
+			int animnumber = Random.Range (1, 4);
+			anim.SetTrigger("IdleAnim" + animnumber);
 		}
 	}
 
-	private IEnumerator mfwait()
-	{
-		yield return new WaitForSeconds(1.5f);
-		CharacterController cc = GetComponent(typeof(CharacterController)) as CharacterController;
-		cc.enabled = true;
-
-	}
-
-	private IEnumerator idleanimations()
-	{
-		yield return new WaitForSeconds(4f);
-		int animnumber = Random.Range (1, 4);
-		anim.SetBool ("Idlea" + animnumber, true);
-		yield break;
-
-	}
-
 	void SetMovement(Vector3 m) {
-		movement = m;
+		movement.x = m.x;
+		movement.z = m.z;
 	}
 
 	void Animating (float h, float v)
 	{
 		bool moving = h != 0f || v != 0f;
 		anim.SetBool ("IsMoving", moving);
+	}
+
+	void Jump() {
+		jumping = true;
 	}
 }

@@ -3,7 +3,6 @@ using System.Collections;
 
 public class InputManager : MonoBehaviour {
 	public static GameObject controlledObject;
-	public float gravity;
 
 	private static GameObject hijacker;
 	public static void HijackInput(GameObject h) {
@@ -48,7 +47,19 @@ public class InputManager : MonoBehaviour {
 			controlledObject.SendMessage("ReleaseTrigger");
 		}
 
-		Vector3 movement = new Vector3(Input.GetAxisRaw("Horizontal"), gravity, Input.GetAxisRaw("Vertical"));
+		if(Input.GetButtonDown("Fire2")) {
+			controlledObject.SendMessage("ChangeAmmoType");
+		}
+
+		if(Input.GetButtonDown("Middle Finger")) {
+			controlledObject.SendMessage("ShowMiddleFinger");
+		}
+
+		if(Input.GetButtonDown("Jump")) {
+			controlledObject.SendMessage("Jump");
+		}
+
+		Vector3 movement = new Vector3(Input.GetAxisRaw("Horizontal"), 0f, Input.GetAxisRaw("Vertical"));
 		controlledObject.SendMessage("SetMovement", movement);
 	}
 }
