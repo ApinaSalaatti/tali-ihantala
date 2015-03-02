@@ -9,6 +9,9 @@ public class Rifle : Weapon {
 	public float inaccuracy;
 	public float shellminimumforce;
 	public float shellmaximumforce;
+	public GameObject otherObject;
+	private bool shooting;
+	Animator otheranim;
 
 	// Use this for initialization
 	void Start () {
@@ -27,6 +30,8 @@ public class Rifle : Weapon {
 			if(burstTimer < 0f)
 				burstTimer = 0f;
 		}
+
+		otheranim = otherObject.GetComponent<Animator>();
 	}
 
 	/*
@@ -70,6 +75,9 @@ public class Rifle : Weapon {
 		shell.AddForce (transform.TransformDirection(Vector3.right*Random.Range (shellminimumforce, shellmaximumforce)), ForceMode.Impulse);
 		shell.AddTorque (Vector3.up*Random.Range (10f, 100f));
 		shell.AddTorque (Vector3.forward*Random.Range(10f, 100f));
+
+		bool shooting = true;
+		otheranim.SetBool ("Shooting", shooting);
 	}
 
 	private IEnumerator MuzzleFlash() {

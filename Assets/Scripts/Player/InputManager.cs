@@ -3,6 +3,7 @@ using System.Collections;
 
 public class InputManager : MonoBehaviour {
 	public static GameObject controlledObject;
+	public float gravity;
 
 	private static GameObject hijacker;
 	public static void HijackInput(GameObject h) {
@@ -47,7 +48,6 @@ public class InputManager : MonoBehaviour {
 			controlledObject.SendMessage("ReleaseTrigger");
 		}
 
-		float gravity = -9.81f;
 		Vector3 movement = new Vector3(Input.GetAxisRaw("Horizontal"), gravity, Input.GetAxisRaw("Vertical"));
 		controlledObject.SendMessage("SetMovement", movement);
 	}
