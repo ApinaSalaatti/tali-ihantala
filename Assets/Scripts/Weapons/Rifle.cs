@@ -8,6 +8,8 @@ public class Rifle : Weapon {
 	public GameObject specialBulletPrefab;
 
 	public GameObject shellPrefab;
+	public GameObject gunsmoke;
+	public GameObject muzzleflash;
 	public float inaccuracy;
 	public float shellminimumforce;
 	public float shellmaximumforce;
@@ -69,6 +71,9 @@ public class Rifle : Weapon {
 		shell.AddForce (transform.TransformDirection(Vector3.right*Random.Range (shellminimumforce, shellmaximumforce)), ForceMode.Impulse);
 		shell.AddTorque (Vector3.up*Random.Range (10f, 100f));
 		shell.AddTorque (Vector3.forward*Random.Range(10f, 100f));
+
+		Instantiate (gunsmoke,transform.position, transform.rotation);
+		Instantiate (muzzleflash,transform.position, Quaternion.AngleAxis(Random.Range(0,360), Vector3.up));
 	}
 
 	private IEnumerator MuzzleFlash() {
