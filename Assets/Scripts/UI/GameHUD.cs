@@ -20,7 +20,7 @@ public class GameHUD : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		weaponText.text = weaponController.CurrentWeapon.name;
-		weaponText.text += ", current ammo type: " + weaponController.CurrentWeapon.GetActiveAmmo();
+		weaponText.text += ", current ammo type: " + weaponController.CurrentWeapon.GetActiveAmmo().name;
 
 		if(weaponController.CurrentWeapon.ammoLeft > -1) {
 			weaponText.text += " (ammo left: " + weaponController.CurrentWeapon.ammoLeft + ")";

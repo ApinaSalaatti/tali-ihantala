@@ -79,8 +79,8 @@ public class PlayerMovement : MonoBehaviour {
 
 	// This gets called by the InputManager
 	void ShowMiddleFinger() {
-		// Can't wave your finger while running or shooting or already showing it
-		if(anim.GetBool("IsMoving") || anim.GetBool("Shooting") || isShowingMiddleFinger) {
+		// Can't wave your finger while running or shooting or already showing it or if in the air
+		if(anim.GetBool("IsMoving") || anim.GetBool("Shooting") || isShowingMiddleFinger || !grounded) {
 			return;
 		}
 
