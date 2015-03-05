@@ -5,6 +5,9 @@ public class ExplosiveBarrel : MonoBehaviour {
 	public float blastRadius = 5f;
 	public float damage = 5f;
 
+	private bool alreadyExploded = false;
+	public GameObject explosion;
+
 	// Use this for initialization
 	void Start () {
 	
@@ -16,15 +19,28 @@ public class ExplosiveBarrel : MonoBehaviour {
 	}
 
 	void OnDeath() {
+		if(alreadyExploded) {
+			return;
+		}
+		alreadyExploded = true;
+
 		// EXPLODE!! (i.e. find all gameobjects that are in the blast radius and HURT them)
 		int layerMask = LayerMask.GetMask("Destroyable", "Enemy", "Player");
+
+		DamageInfo info = new DamageInfo();
+		info.damageAmount = damage;
+		info.damageType = DamageType.EXPLOSION;
+
 		Collider[] cols = Physics.OverlapSphere(transform.position, blastRadius, layerMask);
 		foreach(Collider col in cols) {
 			// Blow everything but yourself
-			if(col.gameObject != gameObject)
-				col.gameObject.SendMessage("TakeDamage", damage);
+			if(col.gameObject != gameObject) {
+				info.damageAt = col.gameObject.transform.position;
+				info.damageDirection = col.gameObject.transform.position - transform.position;
+				col.gameObject.SendMessage("TakeDamage", info);
+			}
 		}
-		
+		Instantiate (explosion, transform.position, explosion.transform.rotation);
 		Destroy(gameObject);
 	}
 }

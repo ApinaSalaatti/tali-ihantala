@@ -124,5 +124,6 @@ public class PlayerMovement : MonoBehaviour {
 
 	void Jump() {
 		jumping = true;
+		anim.SetTrigger ("Jump");
 	}
 }
