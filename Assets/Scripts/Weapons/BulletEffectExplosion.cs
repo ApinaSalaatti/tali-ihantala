@@ -9,8 +9,15 @@ public class BulletEffectExplosion : BulletEffect {
 		int layerMask = LayerMask.GetMask("Destroyable", "Enemy");
 		Collider[] cols = Physics.OverlapSphere(transform.position, blastRadius, layerMask);
 		foreach(Collider col in cols) {
-			if(col.gameObject != gameObject)
-				col.gameObject.SendMessage("TakeDamage", damage);
+			if(col.gameObject != gameObject) {
+				DamageInfo info = new DamageInfo();
+				info.damageAmount = damage;
+				info.damageAt = col.gameObject.transform.position;
+				info.damageDirection = col.gameObject.transform.position - transform.position;
+				info.damageNormal = Vector3.zero;
+				info.damageType = DamageType.EXPLOSION;
+				col.gameObject.SendMessage("TakeDamage", info);
+			}
 		}
 	}
 }

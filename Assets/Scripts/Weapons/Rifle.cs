@@ -4,17 +4,12 @@ using System.Collections;
 public class Rifle : Weapon {
 	public float shootForce = 20f;
 
-	public GameObject bulletPrefab;
-	public GameObject specialBulletPrefab;
-
 	public GameObject shellPrefab;
 	public GameObject gunsmoke;
 	public GameObject muzzleflash;
 	public float inaccuracy;
 	public float shellminimumforce;
 	public float shellmaximumforce;
-
-	public bool usingSpecial = false;
 
 	// Use this for initialization
 	void Start () {
@@ -35,27 +30,12 @@ public class Rifle : Weapon {
 		}
 	}
 
-	public override GameObject GetActiveAmmo ()
-	{
-		if(usingSpecial) {
-			return specialBulletPrefab;
-		}
-		else {
-			return bulletPrefab;
-		}
-	}
-
-	public override void ChangeAmmoType ()
-	{
-		usingSpecial = !usingSpecial;
-	}
-
 	protected override void Fire ()
 	{
 		StartCoroutine(MuzzleFlash());
 
 		// Select correct prefab for bullet (special bullet if they are activated)
-		GameObject prefab = usingSpecial ? specialBulletPrefab : bulletPrefab;
+		GameObject prefab = usingSpecialAmmo ? specialBulletPrefab : bulletPrefab;
 
 		GameObject b = (GameObject)Instantiate(prefab, transform.position + transform.forward, transform.rotation);
 		Vector3 shootDir = Vector3.forward;

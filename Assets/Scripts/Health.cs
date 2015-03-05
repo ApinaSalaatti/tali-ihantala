@@ -23,6 +23,13 @@ public class Health : MonoBehaviour {
 	void Update () {
 		
 	}
+
+	void Heal(float amount) {
+		CurrentHealth += amount;
+		if(CurrentHealth > maxHealth) {
+			CurrentHealth = maxHealth;
+		}
+	}
 	
 	void TakeDamage(DamageInfo info) {
 		health -= info.damageAmount;

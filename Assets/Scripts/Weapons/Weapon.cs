@@ -3,7 +3,28 @@ using System.Collections;
 
 public abstract class Weapon : MonoBehaviour {
 	public float timeBetweenShots = 0.9f;
-	public int ammoLeft = -1; // -1 means infinite ammo
+
+	protected int specialAmmoLeft = 5;
+	protected bool usingSpecialAmmo;
+	public int AmmoLeft {
+		get {
+			if(usingSpecialAmmo)
+				return specialAmmoLeft;
+			else
+				return -1; // -1 means infinite ammo
+		}
+	}
+	public int SpecialAmmoLeft {
+		get {
+			return specialAmmoLeft;
+		}
+	}
+	public void AddSpecialAmmo(int amount) {
+		specialAmmoLeft += amount;
+	}
+
+	public GameObject bulletPrefab;
+	public GameObject specialBulletPrefab;
 
 	protected bool firing = false;
 	private float fireTimer = 1f;
@@ -13,9 +34,13 @@ public abstract class Weapon : MonoBehaviour {
 		fireTimer += Time.deltaTime;
 		WeaponUpdate();
 
+		// If we run out of special ammo, automatically change back to normal ammo
+		if(usingSpecialAmmo && specialAmmoLeft == 0)
+			ChangeAmmoType();
+
 		if(firing) {
-			if(fireTimer >= timeBetweenShots && ammoLeft != 0) {
-				ammoLeft--;
+			if(fireTimer >= timeBetweenShots && AmmoLeft != 0) {
+				if(usingSpecialAmmo) specialAmmoLeft--;
 				fireTimer = 0f;
 				Fire();
 			}
@@ -34,16 +59,22 @@ public abstract class Weapon : MonoBehaviour {
 		firing = false;
 	}
 
-	// Please override this rather than using Update().
-	protected virtual void WeaponUpdate() {
-
+	public virtual GameObject GetActiveAmmo ()
+	{
+		if(usingSpecialAmmo) {
+			return specialBulletPrefab;
+		}
+		else {
+			return bulletPrefab;
+		}
 	}
-
-	// Override this for weapons that support multiple ammo types
-	public virtual void ChangeAmmoType() {
-
+	
+	public virtual void ChangeAmmoType ()
+	{
+		usingSpecialAmmo = !usingSpecialAmmo;
 	}
 
 	protected abstract void Fire();
-	public abstract GameObject GetActiveAmmo();
+	protected virtual void WeaponUpdate() {
+	}
 }

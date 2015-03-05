@@ -23,8 +23,10 @@ public class Enemy : MonoBehaviour {
 		Color col = new Color(1f-healthPrcnt, healthPrcnt, 0.1f);
 		renderer.material.color = col;
 
-		Instantiate(bloodCloud, info.damageAt, Quaternion.LookRotation(info.damageDirection));
-		Instantiate(bloodSpill, info.damageAt, Quaternion.LookRotation(info.damageDirection));
+		Quaternion rot = info.damageDirection == Vector3.zero ? Quaternion.identity : Quaternion.LookRotation(info.damageDirection);
+
+		Instantiate(bloodCloud, info.damageAt, rot);
+		Instantiate(bloodSpill, info.damageAt, rot);
 	}
 
 	void OnDeath() {

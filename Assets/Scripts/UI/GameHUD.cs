@@ -22,8 +22,8 @@ public class GameHUD : MonoBehaviour {
 		weaponText.text = weaponController.CurrentWeapon.name;
 		weaponText.text += ", current ammo type: " + weaponController.CurrentWeapon.GetActiveAmmo().name;
 
-		if(weaponController.CurrentWeapon.ammoLeft > -1) {
-			weaponText.text += " (ammo left: " + weaponController.CurrentWeapon.ammoLeft + ")";
+		if(weaponController.CurrentWeapon.AmmoLeft > -1) {
+			weaponText.text += " (ammo left: " + weaponController.CurrentWeapon.AmmoLeft + ")";
 		}
 
 		healthText.text = "Health: " + playerHealth.CurrentHealth;

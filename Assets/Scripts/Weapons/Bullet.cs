@@ -47,16 +47,16 @@ public class Bullet : MonoBehaviour {
 			d.damageType = DamageType.PROJECTILE;
 
 			go.SendMessage("TakeDamage", d, SendMessageOptions.DontRequireReceiver);
-			
-			BulletEffect[] effects = GetComponents<BulletEffect>();
-			foreach(BulletEffect e in effects) {
-				e.Affect(go);
-			}
 		}
 		else { // If hit object is not destructible, player, or enemy, just spawn the basic particles
 			Vector3 pos = col.contacts[0].point;
 			Instantiate (smoke, pos, Quaternion.LookRotation(-transform.forward));
 			Instantiate (flash, pos, Quaternion.LookRotation(-transform.forward));
+		}
+
+		BulletEffect[] effects = GetComponents<BulletEffect>();
+		foreach(BulletEffect e in effects) {
+			e.Affect(go);
 		}
 		
 		Destroy(gameObject);
