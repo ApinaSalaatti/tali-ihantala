@@ -6,6 +6,8 @@ public class ExplosiveBarrel : MonoBehaviour {
 	public float damage = 5f;
 
 	private bool alreadyExploded = false;
+	public GameObject explosion;
+
 
 	// Use this for initialization
 	void Start () {
@@ -39,7 +41,7 @@ public class ExplosiveBarrel : MonoBehaviour {
 				col.gameObject.SendMessage("TakeDamage", info);
 			}
 		}
-		
+		Instantiate (explosion, transform.position, explosion.transform.rotation);
 		Destroy(gameObject);
 	}
 }
