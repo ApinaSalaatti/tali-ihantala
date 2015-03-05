@@ -2,6 +2,8 @@
 using System.Collections;
 
 public class Enemy : MonoBehaviour {
+	public GameObject bloodCloud;
+	public GameObject bloodSpill;
 
 	// Use this for initialization
 	void Start () {
@@ -13,13 +15,16 @@ public class Enemy : MonoBehaviour {
 	
 	}
 
-	void OnDamage(float damage) {
+	void OnDamage(DamageInfo info) {
 		Health h = GetComponent<Health>();
 
 		float healthPrcnt = h.CurrentHealth / h.maxHealth;
 
 		Color col = new Color(1f-healthPrcnt, healthPrcnt, 0.1f);
 		renderer.material.color = col;
+
+		Instantiate(bloodCloud, info.damageAt, Quaternion.LookRotation(info.damageDirection));
+		Instantiate(bloodSpill, info.damageAt, Quaternion.LookRotation(info.damageDirection));
 	}
 
 	void OnDeath() {

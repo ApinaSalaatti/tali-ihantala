@@ -24,9 +24,9 @@ public class Health : MonoBehaviour {
 		
 	}
 	
-	void TakeDamage(float damage) {
-		health -= damage;
-		gameObject.SendMessage("OnDamage", damage, SendMessageOptions.DontRequireReceiver);
+	void TakeDamage(DamageInfo info) {
+		health -= info.damageAmount;
+		gameObject.SendMessage("OnDamage", info, SendMessageOptions.DontRequireReceiver);
 
 		if(health <= 0f) {
 			gameObject.SendMessage("OnDeath", SendMessageOptions.DontRequireReceiver);

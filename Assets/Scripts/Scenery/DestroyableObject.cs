@@ -3,6 +3,9 @@ using System.Collections;
 
 [RequireComponent (typeof(Health))]
 public class DestroyableObject : MonoBehaviour {
+	public GameObject hitParticles;
+	public GameObject hitSmoke;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -11,6 +14,11 @@ public class DestroyableObject : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		
+	}
+
+	void OnDamage(DamageInfo info) {
+		Instantiate(hitParticles, info.damageAt, Quaternion.LookRotation(-info.damageDirection));
+		Instantiate(hitSmoke, info.damageAt, Quaternion.LookRotation(-info.damageDirection));
 	}
 	
 	void OnDeath() {

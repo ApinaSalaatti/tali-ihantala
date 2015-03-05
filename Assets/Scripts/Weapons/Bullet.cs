@@ -5,8 +5,8 @@ public class Bullet : MonoBehaviour {
 	public float damage;
 	public GameObject smoke;
 	public GameObject flash;
-	public GameObject bloodspill;
-	public GameObject bloodcloud;
+	//public GameObject bloodspill;
+	//public GameObject bloodcloud;
 
 	// Use this for initialization
 	void Start () {
@@ -17,31 +17,48 @@ public class Bullet : MonoBehaviour {
 
 	}
 
-	private void HitObject(GameObject go) {
-		go.SendMessage("TakeDamage", damage, SendMessageOptions.DontRequireReceiver);
-
-		BulletEffect[] effects = GetComponents<BulletEffect>();
-		foreach(BulletEffect e in effects) {
-			e.Affect(go);
-
-
-		}
-
-		Destroy(gameObject);
-	}
-
 	void OnCollisionEnter(Collision col) {
+		GameObject go = col.collider.gameObject;
 
-			HitObject (col.collider.gameObject);
+		//Vector3 pos = col.contacts[0].point;
+		//Vector3 normal = col.contacts[0].normal;
 
-		//tuo flashi pitäs saada syntyyn luodin suunan vastaiseen suuntaan ja veriroiskeet samaan suuntaan... mitenkähän se onnistuis?
-		//nää elottomaan:
-		Instantiate (smoke, transform.position, transform.rotation);
-		Instantiate (flash, transform.position, transform.rotation);
+		/*
 
-		//nää kaikkeen elävään:
-		//Instantiate (bloodcloud, transform.position, transform.rotation);
-		//Instantiate (bloodspill, transform.position, transform.rotation);
+		if(col.collider.gameObject.tag == "Humanoid") {
+			Instantiate (bloodcloud, pos, transform.rotation);
+			Instantiate (bloodspill, pos, transform.rotation);
+		}
+		else {
+			Instantiate (smoke, pos, transform.rotation);
+			Instantiate (flash, pos, transform.rotation);
+		}*/
+
+		int dl = LayerMask.NameToLayer("Destroyable");
+		int el = LayerMask.NameToLayer("Enemy");
+		int pl = LayerMask.NameToLayer("Player");
+
+		if(go.layer == dl || go.layer == el || go.layer == pl) {
+			DamageInfo d = new DamageInfo();
+			d.damageAmount = damage;
+			d.damageDirection = transform.forward;
+			d.damageAt = col.contacts[0].point;
+			d.damageNormal = col.contacts[0].normal;
+			d.damageType = DamageType.PROJECTILE;
+
+			go.SendMessage("TakeDamage", d, SendMessageOptions.DontRequireReceiver);
+			
+			BulletEffect[] effects = GetComponents<BulletEffect>();
+			foreach(BulletEffect e in effects) {
+				e.Affect(go);
+			}
+		}
+		else { // If hit object is not destructible, player, or enemy, just spawn the basic particles
+			Vector3 pos = col.contacts[0].point;
+			Instantiate (smoke, pos, Quaternion.LookRotation(-transform.forward));
+			Instantiate (flash, pos, Quaternion.LookRotation(-transform.forward));
+		}
 		
+		Destroy(gameObject);
 	}
 }

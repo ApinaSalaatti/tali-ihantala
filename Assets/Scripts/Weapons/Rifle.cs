@@ -57,7 +57,7 @@ public class Rifle : Weapon {
 		// Select correct prefab for bullet (special bullet if they are activated)
 		GameObject prefab = usingSpecial ? specialBulletPrefab : bulletPrefab;
 
-		GameObject b = (GameObject)Instantiate(prefab, transform.position + transform.forward, Quaternion.identity);
+		GameObject b = (GameObject)Instantiate(prefab, transform.position + transform.forward, transform.rotation);
 		Vector3 shootDir = Vector3.forward;
 		// Add some inaccuracy 'cause it looks cool!
 		float inacc = Random.Range(-inaccuracy, inaccuracy) * burstTimer; // The inaccuracy increases the longer you fire
