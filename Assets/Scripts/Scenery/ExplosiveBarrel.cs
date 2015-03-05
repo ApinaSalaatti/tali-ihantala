@@ -6,7 +6,10 @@ public class ExplosiveBarrel : MonoBehaviour {
 	public float damage = 5f;
 
 	private bool alreadyExploded = false;
+<<<<<<< HEAD
 	public GameObject explosion;
+=======
+>>>>>>> eaed0b88280c99c05a29a4e768ce364786a35722
 
 	// Use this for initialization
 	void Start () {
