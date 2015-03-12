@@ -33,6 +33,7 @@ public class ExplosiveBarrel : MonoBehaviour {
 		info.damageType = DamageType.EXPLOSION;
 
 		Collider[] cols = Physics.OverlapSphere(transform.position, blastRadius, layerMask);
+		Debug.Log ("explosioncheck");
 		foreach(Collider col in cols) {
 			// Blow everything but yourself
 			if(col.gameObject != gameObject) {

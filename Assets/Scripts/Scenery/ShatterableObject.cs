@@ -2,7 +2,7 @@
 using System.Collections;
 
 [RequireComponent (typeof(Health))]
-public class DestroyableObject : MonoBehaviour {
+public class ShatterableObject : MonoBehaviour {
 	public GameObject hitParticles;
 	public GameObject hitSmoke;
 	public GameObject piece1;
@@ -23,6 +23,7 @@ public class DestroyableObject : MonoBehaviour {
 	public GameObject piece16;
 	public GameObject piece17;
 	public GameObject piece18;
+	public GameObject piece19;
 	public float impactthrustmin;
 	public float impactthrustmax;
 	
@@ -43,8 +44,8 @@ public class DestroyableObject : MonoBehaviour {
 	}
 	
 	void OnDeath() {
-		Destroy(rigidbody);
 		transform.collider.isTrigger = true;
+		Destroy(rigidbody);
 
 		piece1.transform.collider.isTrigger = false;
 		piece1.rigidbody.isKinematic = false;
@@ -118,6 +119,9 @@ public class DestroyableObject : MonoBehaviour {
 		piece18.rigidbody.isKinematic = false;
 		piece18.rigidbody.AddForce(Vector3.up * Random.Range (impactthrustmin, impactthrustmax));
 
+		piece19.transform.collider.isTrigger = false;
+		piece19.rigidbody.isKinematic = false;
+		piece19.rigidbody.AddForce(Vector3.up * Random.Range (impactthrustmin, impactthrustmax));
 
 	}
 }
