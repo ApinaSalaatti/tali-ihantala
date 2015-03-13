@@ -7,16 +7,17 @@ public class ParticleonDamage : MonoBehaviour
 	
 	public GameObject hitParticles;
 	public GameObject hitSmoke;
-	public GameObject particle;
+	public ParticleSystem particle;
 	
 	// Use this for initialization
 	void Start () 
 	{
 	}
-	
+
 	// Update is called once per frame
-	void Update () 
+	void FixedUpdate () 
 	{
+		particle.Stop ();
 	}
 	
 	void OnDamage(DamageInfo info) 
@@ -24,7 +25,7 @@ public class ParticleonDamage : MonoBehaviour
 		Instantiate(hitParticles, info.damageAt, Quaternion.LookRotation(-info.damageDirection));
 		Instantiate(hitSmoke, info.damageAt, Quaternion.LookRotation(-info.damageDirection));
 
-		particle.particleEmitter.emit = false;
+		particle.Play ();
 	}
 	void OnDeath() 
 	{
