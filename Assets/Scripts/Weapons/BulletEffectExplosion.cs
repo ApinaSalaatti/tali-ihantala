@@ -5,6 +5,10 @@ public class BulletEffectExplosion : BulletEffect {
 	public float blastRadius = 2f;
 	public float damage = 1f;
 
+	void Start() {
+		this.damageType = DamageType.FIRE;
+	}
+
 	public override void Affect (GameObject obj) {
 		int layerMask = LayerMask.GetMask("Destroyable", "Enemy");
 		Collider[] cols = Physics.OverlapSphere(transform.position, blastRadius, layerMask);
@@ -15,7 +19,7 @@ public class BulletEffectExplosion : BulletEffect {
 				info.damageAt = col.gameObject.transform.position;
 				info.damageDirection = col.gameObject.transform.position - transform.position;
 				info.damageNormal = Vector3.zero;
-				info.damageType = DamageType.EXPLOSION;
+				info.damageType = damageType;
 				col.gameObject.SendMessage("TakeDamage", info);
 			}
 		}

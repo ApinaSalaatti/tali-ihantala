@@ -19,12 +19,12 @@ public class CleanDestroyableObject : MonoBehaviour
 	}
 
 	void OnDamage(DamageInfo info) 
-		{
-			Instantiate(hitParticles, info.damageAt, Quaternion.LookRotation(-info.damageDirection));
-			Instantiate(hitSmoke, info.damageAt, Quaternion.LookRotation(-info.damageDirection));
-		}
+	{
+		Instantiate(hitParticles, info.damageAt, Quaternion.LookRotation(-info.damageDirection));
+		Instantiate(hitSmoke, info.damageAt, Quaternion.LookRotation(-info.damageDirection));
+	}
 	void OnDeath() 
-		{
+	{
 		Destroy(gameObject);
-		}
+	}
 }

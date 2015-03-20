@@ -7,7 +7,7 @@ public class Enemy : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		renderer.material.color = Color.green;
+		GetComponent<Renderer>().material.color = Color.green;
 	}
 	
 	// Update is called once per frame
@@ -21,7 +21,7 @@ public class Enemy : MonoBehaviour {
 		float healthPrcnt = h.CurrentHealth / h.maxHealth;
 
 		Color col = new Color(1f-healthPrcnt, healthPrcnt, 0.1f);
-		renderer.material.color = col;
+		GetComponent<Renderer>().material.color = col;
 
 		Quaternion rot = info.damageDirection == Vector3.zero ? Quaternion.identity : Quaternion.LookRotation(info.damageDirection);
 

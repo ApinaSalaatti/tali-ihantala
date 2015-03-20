@@ -43,7 +43,7 @@ public class Rifle : Weapon {
 		float inacc = Random.Range(-inaccuracy, inaccuracy) * burstTimer; // The inaccuracy increases the longer you fire
 		shootDir.x += inacc;
 		shootDir = transform.TransformDirection(shootDir.normalized);
-		b.rigidbody.AddForce(shootDir * shootForce, ForceMode.Impulse);
+		b.GetComponent<Rigidbody>().AddForce(shootDir * shootForce, ForceMode.Impulse);
 
 
 		GameObject s = Instantiate (shellPrefab,transform.position, transform.rotation) as GameObject;
@@ -57,8 +57,8 @@ public class Rifle : Weapon {
 	}
 
 	private IEnumerator MuzzleFlash() {
-		light.intensity = 1f;
+		GetComponent<Light>().intensity = 1f;
 		yield return new WaitForSeconds(0.1f);
-		light.intensity = 0f;
+		GetComponent<Light>().intensity = 0f;
 	}
 }

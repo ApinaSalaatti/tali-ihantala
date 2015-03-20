@@ -11,7 +11,7 @@ public class GrenadeLauncher : Weapon {
 		Vector3 launchDir = transform.forward;
 		launchDir.y += 0.3f; // Launch the grenade a bit upwards
 		launchDir = launchDir.normalized;
-		g.rigidbody.AddForce(launchDir * launchForce, ForceMode.Impulse);
+		g.GetComponent<Rigidbody>().AddForce(launchDir * launchForce, ForceMode.Impulse);
 	}
 
 	public override GameObject GetActiveAmmo ()

@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public enum DamageType { PROJECTILE, EXPLOSION, POISON };
+public enum DamageType { PROJECTILE, EXPLOSION, FIRE, POISON };
 
 public class DamageInfo {
 	public DamageType damageType;
