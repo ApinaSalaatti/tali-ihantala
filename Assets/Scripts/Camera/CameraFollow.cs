@@ -5,11 +5,11 @@ public class CameraFollow : MonoBehaviour {
 	public GameObject followedObject;
 	private CharacterController objectController;
 
-	private Vector3 offset;
+	public Vector3 offset;
 
 	// Use this for initialization
 	void Start () {
-		offset = transform.position - followedObject.transform.position;
+		//offset = transform.position - followedObject.transform.position;
 		objectController = followedObject.GetComponent<CharacterController>();
 	}
 	
