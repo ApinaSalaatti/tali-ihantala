@@ -30,12 +30,23 @@ public class PlayerMovement : MonoBehaviour {
 
 	void FixedUpdate()
 	{
+		// Aiming
 		Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+		int layerMask = LayerMask.GetMask("Destroyable", "Enemy", "Terrain");
 		RaycastHit hit;
-		if(Physics.Raycast(ray,out hit, 100f)) {
+		if(Physics.Raycast(ray,out hit, 100f, layerMask)) {
 			Vector3 mousePos = hit.point;
 			Vector3 offset = Vector3.zero;
-			weapons.AimAt(mousePos);
+
+			int dl = LayerMask.NameToLayer("Destroyable");
+			int el = LayerMask.NameToLayer("Enemy");
+			if(hit.collider.gameObject.layer != dl && hit.collider.gameObject.layer != el) {
+				// We are aiming at something we don't really need to hit, so just aim straight to the side
+				float weaponYOffset = weapons.CurrentWeapon.transform.position.y - transform.position.y;
+				offset.y = weaponYOffset;
+			}
+
+			weapons.AimAt(mousePos + offset);
 
 			mousePos.y = transform.position.y;
 			transform.LookAt(mousePos);

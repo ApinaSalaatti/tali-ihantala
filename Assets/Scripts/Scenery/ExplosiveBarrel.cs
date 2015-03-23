@@ -26,7 +26,7 @@ public class ExplosiveBarrel : MonoBehaviour {
 		alreadyExploded = true;
 
 		// EXPLODE!! (i.e. find all gameobjects that are in the blast radius and HURT them)
-		int layerMask = LayerMask.GetMask("Destroyable", "Enemy", "Player");
+		int layerMask = LayerMask.GetMask("Destroyable", "Enemy", "Player", "Scenery");
 
 		DamageInfo info = new DamageInfo();
 		info.damageAmount = damage;
@@ -39,8 +39,8 @@ public class ExplosiveBarrel : MonoBehaviour {
 			// Blow everything but yourself
 			if(col.gameObject != gameObject) {
 				info.damageAt = col.gameObject.transform.position;
-				info.damageDirection = col.gameObject.transform.position - transform.position;
-				col.gameObject.SendMessage("TakeDamage", info);
+				info.damageDirection = (col.gameObject.transform.position - transform.position).normalized;
+				col.gameObject.SendMessage("TakeDamage", info, SendMessageOptions.DontRequireReceiver);
 			}
 		}
 		Instantiate (explosion, transform.position, explosion.transform.rotation);

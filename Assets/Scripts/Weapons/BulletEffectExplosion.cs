@@ -10,7 +10,7 @@ public class BulletEffectExplosion : BulletEffect {
 	}
 
 	public override void Affect (GameObject obj) {
-		int layerMask = LayerMask.GetMask("Destroyable", "Enemy");
+		int layerMask = LayerMask.GetMask("Destroyable", "Enemy", "Scenery");
 		Collider[] cols = Physics.OverlapSphere(transform.position, blastRadius, layerMask);
 		foreach(Collider col in cols) {
 			if(col.gameObject != gameObject) {
