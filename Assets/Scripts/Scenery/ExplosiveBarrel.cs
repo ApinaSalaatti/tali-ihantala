@@ -1,9 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class ExplosiveBarrel : MonoBehaviour {
+public class ExplosiveBarrel : CleanDestroyableObject {
 	public float blastRadius = 5f;
 	public float damage = 5f;
+	public float explosionDelay = 0.1f;
 
 	private bool alreadyExploded = false;
 	public GameObject explosion;
@@ -27,12 +28,17 @@ public class ExplosiveBarrel : MonoBehaviour {
 		}
 		alreadyExploded = true;
 
+		StartCoroutine(Explode());
+	}
+
+	private IEnumerator Explode() {
+		yield return new WaitForSeconds(explosionDelay);
 		// EXPLODE!! (i.e. find all gameobjects that are in the blast radius and HURT them)
 		int layerMask = LayerMask.GetMask("Destroyable", "Enemy", "Player", "Scenery");
-
+		
 		info.damageAmount = damage;
 		info.damageType = DamageType.EXPLOSION;
-
+		
 		//Debug.Log("BEFORE OVERLAP SPHERE " + Time.realtimeSinceStartup);
 		Collider[] cols = Physics.OverlapSphere(transform.position, blastRadius, layerMask);
 		//Debug.Log ("AFTER OVERLAP SPHERE " + Time.realtimeSinceStartup);
