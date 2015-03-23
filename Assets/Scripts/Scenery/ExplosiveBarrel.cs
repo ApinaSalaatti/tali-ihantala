@@ -8,10 +8,12 @@ public class ExplosiveBarrel : MonoBehaviour {
 	private bool alreadyExploded = false;
 	public GameObject explosion;
 
+	private DamageInfo info;
+
 
 	// Use this for initialization
 	void Start () {
-	
+		info = new DamageInfo();
 	}
 	
 	// Update is called once per frame
@@ -28,14 +30,14 @@ public class ExplosiveBarrel : MonoBehaviour {
 		// EXPLODE!! (i.e. find all gameobjects that are in the blast radius and HURT them)
 		int layerMask = LayerMask.GetMask("Destroyable", "Enemy", "Player", "Scenery");
 
-		DamageInfo info = new DamageInfo();
 		info.damageAmount = damage;
 		info.damageType = DamageType.EXPLOSION;
 
+		//Debug.Log("BEFORE OVERLAP SPHERE " + Time.realtimeSinceStartup);
 		Collider[] cols = Physics.OverlapSphere(transform.position, blastRadius, layerMask);
-		Debug.Log ("explosioncheck");
+		//Debug.Log ("AFTER OVERLAP SPHERE " + Time.realtimeSinceStartup);
 		foreach(Collider col in cols) {
-			Debug.Log(col.gameObject.name);
+			//Debug.Log(col.gameObject.name);
 			// Blow everything but yourself
 			if(col.gameObject != gameObject) {
 				info.damageAt = col.gameObject.transform.position;
@@ -45,5 +47,6 @@ public class ExplosiveBarrel : MonoBehaviour {
 		}
 		Instantiate (explosion, transform.position, explosion.transform.rotation);
 		Destroy(gameObject);
+		//Debug.Log("AFTER APPLIED TO TARGETS " + Time.realtimeSinceStartup);
 	}
 }
