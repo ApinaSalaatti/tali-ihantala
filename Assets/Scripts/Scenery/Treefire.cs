@@ -35,7 +35,7 @@ public class Treefire : MonoBehaviour
 	}
 
 	void OnTriggerEnter(Collider c) {
-		Debug.Log("TREE HIT!");
+		//Debug.Log("TREE HIT!");
 		// Check if we were hit with something that does fire damage
 		BulletEffect[] effects = c.gameObject.GetComponents<BulletEffect>();
 		foreach(BulletEffect be in effects) {
