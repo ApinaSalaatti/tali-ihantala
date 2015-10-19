@@ -1,15 +1,76 @@
 fileFormatVersion: 2
 guid: c9dd131d211e328449136d410fddf21d
 ModelImporter:
-  serializedVersion: 16
+  serializedVersion: 18
   fileIDToRecycleName:
     100000: //RootNode
+    100002: Bear
+    100004: Cube
+    100006: Cube_001
+    100008: Armature
+    100010: Bone
+    100012: Bone_001
+    100014: Bone_002
+    100016: Bone_003
+    100018: Bone_004
+    100020: Bone_005
+    100022: Bone_006
+    100024: Bone_007
+    100026: Bone_008
+    100028: Bone_009
+    100030: Bone_010
+    100032: Bone_011
+    100034: Bone_012
+    100036: Bone_013
+    100038: Bone_014
+    100040: Bone_015
+    100042: Bone_016
+    100044: Bone_017
+    100046: Bone_018
+    100048: Bone_019
+    100050: Bone_020
+    100052: Bone_021
     400000: //RootNode
+    400002: Bear
+    400004: Cube
+    400006: Cube_001
+    400008: Armature
+    400010: Bone
+    400012: Bone_001
+    400014: Bone_002
+    400016: Bone_003
+    400018: Bone_004
+    400020: Bone_005
+    400022: Bone_006
+    400024: Bone_007
+    400026: Bone_008
+    400028: Bone_009
+    400030: Bone_010
+    400032: Bone_011
+    400034: Bone_012
+    400036: Bone_013
+    400038: Bone_014
+    400040: Bone_015
+    400042: Bone_016
+    400044: Bone_017
+    400046: Bone_018
+    400048: Bone_019
+    400050: Bone_020
+    400052: Bone_021
     2300000: //RootNode
+    2300002: Bear
+    2300004: Cube
+    2300006: Cube_001
     3300000: //RootNode
+    3300002: Bear
+    3300004: Cube
+    3300006: Cube_001
     4300000: Cube
+    4300002: Bear
+    4300004: Cube_001
     7400000: Default Take
     9500000: //RootNode
+    13700000: Bear
   materials:
     importMaterials: 1
     materialName: 0
@@ -37,11 +98,13 @@ ModelImporter:
     generateSecondaryUV: 0
     useFileUnits: 1
     optimizeMeshForGPU: 1
+    keepQuads: 0
     weldVertices: 1
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
+    useFileScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     splitTangentsAcrossUV: 1
@@ -64,3 +127,5 @@ ModelImporter:
   animationType: 2
   additionalBone: 0
   userData: 
+  assetBundleName: 
+  assetBundleVariant: 
