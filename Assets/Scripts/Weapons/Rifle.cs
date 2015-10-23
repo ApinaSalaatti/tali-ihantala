@@ -57,7 +57,7 @@ public class Rifle : Weapon {
 	}
 
 	private IEnumerator MuzzleFlash() {
-		GetComponent<Light>().intensity = 1f;
+		GetComponent<Light>().intensity = 5f;
 		yield return new WaitForSeconds(0.1f);
 		GetComponent<Light>().intensity = 0f;
 	}

@@ -32,8 +32,9 @@ public class ShatterableObject : MonoBehaviour {
 	void OnDeath() {
 		transform.GetComponent<Collider>().isTrigger = true;
 		Destroy(GetComponent<Rigidbody>());
+        
 
-		foreach(GameObject p in pieces) {
+        foreach (GameObject p in pieces) {
 			p.transform.GetComponent<Collider>().isTrigger = false;
 			p.GetComponent<Rigidbody>().isKinematic = false;
 			p.GetComponent<Rigidbody>().AddForce(lastHitDirection * Random.Range(impactthrustmin, impactthrustmax));
